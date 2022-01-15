@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery_style.css">
+    <link rel="stylesheet" href="fontawesome-free-css/fontawesome-free-5.15.4-web/css/all.min.css">
+    <title>Gallery</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li><a href="home_page.html" title="Home Page">Home</a></li>
+                    <li><a href="about_me.html" title="About Page">About</a></li>
+                    <li><a href="gallery.html" title="Gallery Page">Gallery</a></li>
+                    <li><a href="contact.html" title="Message Author">Message Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="popup-image" id="pop-full-img">
+        <span onclick="closefullimg()">X</span>
+        <img src="" id="fullimg" alt="">
+    </div>
+
+    <div class="content">
+        <h2>Stoyan's Gallery</h2>
+    </div>
+
+    <div class="img-full-gallery">
+        <img src="img/fog1.jpg" alt="" onclick="openpopup(this.src)">
+        <img src="img/forest road.jpg" alt="" onclick="openpopup(this.src)">
+        <img src="img/forest trees.jpg" alt="" onclick="openpopup(this.src)">
+        <img src="img/forest.jpg" alt="" onclick="openpopup(this.src)">
+        <img src="img/orange.jpg" alt="" onclick="openpopup(this.src)">
+        <img src="img/red.jpg" alt="" onclick="openpopup(this.src)">
+    </div>
+
+    <div class="btn">
+        <li>
+            <a href="data/pictures.rar" download="pictures.rar">Download Gallery</a>
+        </li>
+    </div>
+
+
+    <hr>
+
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook" target="_blank"></i></a>
+                <a href="https://github.com/StoyanKYM" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+                <a href="https://www.linkedin.com/in/stoyan-kyumyurdzhiev/" target="_blank"><i class="fab fa-linkedin-in" target="_blank"></i></a>
+            </div>
+
+            <p class="copyright">StoyanKyumyurdjiev © 2022</p>
+        </footer>
+    </div>
+
+    <script src="contactJS.js" type="text/javascript"></script>
+
+    <!--
+    <script>
+        var fullimgpop = document.getElementById("pop-full-img");
+        var fullimg = document.getElementById("fullimg");
+
+
+        function openpopup(pic) {
+            fullimgpop.style.display = "flex";
+            fullimg.src = pic;
+        }
+
+        function closefullimg() {
+            fullimgpop.style.display = "none";
+        }
+    </script>
+    -->
+
+</body>
+
+</html>
